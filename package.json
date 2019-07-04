@@ -13,7 +13,9 @@
     "clean": "./node_modules/.bin/gulp clean",
     "watch": "./node_modules/.bin/gulp watch",
     "test": "./node_modules/.bin/gulp test",
-    "prepublish": "./node_modules/.bin/gulp prepublish"
+    "prepublish": "./node_modules/.bin/gulp prepublish",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-eslint": "7.2.1",
@@ -47,6 +49,8 @@
     "del": "2.2.2",
     "fluent-ffmpeg": "2.1.0",
     "lodash": "^4.17.11",
-    "moment": "2.22.2"
-  }
+    "moment": "2.22.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
